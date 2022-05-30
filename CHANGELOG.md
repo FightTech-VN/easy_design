@@ -1,3 +1,6 @@
+## 1.0.0+1
+
+- Rename file import
 ## 1.0.0
 
 - Init package easy_design
