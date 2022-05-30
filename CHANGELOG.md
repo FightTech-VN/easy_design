@@ -1,6 +1,6 @@
 ## 1.0.0
 
-- Init package easy_theme
+- Init package easy_design
 - Support show info and demo textstyle of theme. 
 - List textstyle:
     - displayLarge
