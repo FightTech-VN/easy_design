@@ -1,3 +1,6 @@
+## 1.0.0+2
+
+- Update get name of textstyle
 ## 1.0.0+1
 
 - Rename file import

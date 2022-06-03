@@ -98,8 +98,7 @@ enum TextThemeStyle {
 
 extension TextThemeStyleExt on TextThemeStyle {
   String get capitalize {
-    final title = TextThemeStyle.displayLarge.name;
-    return "${title[0].toUpperCase()}${title.substring(1).toLowerCase()}";
+    return "${name[0].toUpperCase()}${name.substring(1).toLowerCase()}";
   }
 
   TextStyle style(TextTheme textTheme) {
