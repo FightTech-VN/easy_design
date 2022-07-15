@@ -96,10 +96,22 @@ enum TextThemeStyle {
   labelSmall,
 }
 
+const Map<TextThemeStyle, String> mMapTextStyle = {
+  TextThemeStyle.displayLarge: 'headling1',
+  TextThemeStyle.displayMedium: 'headling2',
+  TextThemeStyle.displaySmall: 'headling3',
+  TextThemeStyle.headlineLarge: 'headling4',
+  TextThemeStyle.headlineMedium: 'headling5',
+  TextThemeStyle.headlineSmall: 'headling6',
+  TextThemeStyle.bodyMedium: 'paragraph',
+  TextThemeStyle.labelMedium: 'paragraphExt',
+  TextThemeStyle.bodySmall: 'smallText',
+};
+
 extension TextThemeStyleExt on TextThemeStyle {
   String get capitalize {
-    final title = TextThemeStyle.displayLarge.name;
-    return "${title[0].toUpperCase()}${title.substring(1).toLowerCase()}";
+    //${name[0].toUpperCase()}${name.substring(1).toLowerCase()}
+    return "${name[0].toUpperCase()}${name.substring(1).toLowerCase()} ${mMapTextStyle[TextThemeStyle.values[index]] ?? name} ";
   }
 
   TextStyle style(TextTheme textTheme) {

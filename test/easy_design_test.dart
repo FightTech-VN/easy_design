@@ -6,9 +6,9 @@ void main() {
   testWidgets('Pump Screen TypographyScreen', (WidgetTester tester) async {
     // Build our app and trigger a frame.
 
-    final app = MaterialApp(
+    const app = MaterialApp(
       home: Scaffold(
-        body: const TypographyScreen(),
+        body: TypographyScreen(),
       ),
     );
 
